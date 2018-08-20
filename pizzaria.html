@@ -1,0 +1,392 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzaria</title>
+    <style>
+        * {
+            font-family: 'Myriad Pro';
+            margin: 0;
+            padding: 0;
+
+
+
+        }
+
+        .banner {
+            float: left;
+            width: 250px;
+            height: 785px;
+
+        }
+
+        .banner img {
+            width: 230px;
+            border-right: 10px solid #ed3237;
+            border-left: 10px solid #ed3237;
+            height: 650px;
+
+        }
+
+        #pizzas h2 {
+            text-align: left;
+            margin-top: 70px;
+            margin-left: 87px;
+        }
+
+        #pizzas {
+            float: left;
+            background: #850d23;
+            width: 865px;
+            height: 650px;
+            color: #fcfcfc;
+        }
+
+        .topo {
+            width: 1366px;
+            height: 72px;
+            background: #ed3237;
+            margin: 0 auto;
+        }
+
+        .menu ul {
+
+            text-align: left;
+            padding-top: 26px;
+        }
+
+        .menu li {
+            display: inline;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 35px;
+            font-size: 20px;
+
+        }
+
+        .conteudo {
+            width: 1366px;
+            margin: auto;
+        }
+
+        .conteudo-topo {
+            background: #ed3237;
+        }
+
+        .quebrar .quadrado {
+            background-color: #ed3237;
+            height: 13px;
+            width: 1366px;
+            transform: translateY(-135px);
+        }
+
+        .mapa {
+            float: left;
+        }
+
+        #sobreNos h2 {
+            text-align: center;
+            transform: translatey(-15px);
+            font-size: 30px;
+        }
+
+        #sobreNos {
+            background-color: #850d23;
+            height: 700px;
+            transform: translateY(-135px);
+        }
+        
+
+        .sobren {
+            background-color: white;
+            height: 300px;
+            width: 720px;
+            margin: auto;
+            transform: translateY(149px);
+            font-size: 17px;
+            text-align: justify;
+            border: 55px solid white
+        }
+
+        .pizza {
+            width: 300px;
+            height: 180px;
+            background: rgb(128, 128, 128, 0.5);
+            float: left;
+            margin-left: 90px;
+        }
+
+        .compra {
+            width: 300px;
+            height: 170px;
+            font-size: 28px;
+            background-color: rgb(128, 128, 128, 0.5);
+            float: left;
+            margin-left: 89px;
+            margin-top: 40px;
+        }
+
+        .compra p {
+            font-size: 22px;
+        }
+
+        .compra+.resto {
+            float: left;
+
+        }
+
+        .resto {
+            width: 300px;
+            height: 250px;
+            background-color: yellowgreen;
+            margin-left: 91px;
+            margin-top: 40px;
+
+        }
+
+        #rodape {
+            background-color: #4f4f4f;
+            height: 212px;
+            color: #fcfcfc;
+            padding: 20px;
+            transform: translateY(-135px);
+
+        }
+
+        .cardapio {
+            width: 300px;
+            height: 50px;
+            background: rgb(128, 128, 128, 0.5);
+            float: left;
+            margin-left: 91px;
+            margin-top: 40px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        .promoçoes {
+
+            width: 300px;
+            height: 41px;
+            background: rgb(128, 128, 128, 0.5);
+            float: left;
+            margin-left: 91px;
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .acompanhamentos {
+            width: 300px;
+            height: 41px;
+            background: rgb(128, 128, 128, 0.5);
+            float: left;
+            margin-left: 91px;
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .mapa {
+            display: inline;
+        }
+
+        #contato {
+
+            display: inline-block;
+            margin-top: 50px;
+            margin-left: 35px;
+        }
+
+        .quebra .circulos1 {
+            background-color: #850d23;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            transform: translateX(410px) translateY(-300px);
+        }
+
+        .quebra .circulos2 {
+            background-color: #850d23;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            transform: translateX(-410px) translateY(-400px);
+        }
+
+        .quebra .circulos3 {
+            background-color: #850d23;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            transform: translateX(410px) translateY(-100px);
+        }
+
+        .quebra .circulos4 {
+            background-color: #850d23;
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            border-radius: 50%;
+            transform: translateX(-410px) translateY(-200px);
+        }
+
+        .cardapio a {
+            color:white;
+        }
+
+        .promoçoes a {
+            color: white;
+        }
+
+        .acompanhamentos a {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="topo">
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#">ENDEREÇO</a>
+                </li>
+                <li>
+                    <a href="#">CONTATO</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+    <!--fim topo-->
+    <main class="conteudo">
+        <div class="conteudo-topo">
+            <div class="banner">
+                <img src="Imagens/Ativo 2.png" alt="Imagem de pizza à esquerda">
+            </div>
+            <section id="pizzas">
+                <!--div,background,rgba-->
+                <h2>MAIS POPULARES</h2>
+                <br>
+                <div class="pizza">
+
+                    <dd>01-Pizza de Mozarella</dd>
+                    <br>
+                    <dd>02-Pizza de Calabresa</dd>
+                    <br>
+                    <dd>03-Pizza de Champignon com Bacon</dd>
+                    <br>
+                    <dd>04-Pizza de Peperone</dd>
+                    <br>
+                    <dd>05-Pizza de Catupiry</dd>
+                    <br>
+                </div>
+                <div class="pizza">
+                    <dd>06-Pizza Portuguesa</dd>
+                    <br>
+                    <dd>07-Pizza Grega</dd>
+                    <br>
+                    <dd>08-Pizza de Atum</dd>
+                    <br>
+                    <dd>09-Pizza Marguerita</dd>
+                    <br>
+                    <dd>10-Pizza de Tomate Seco</dd>
+                    <br>
+                </div>
+                <div style="clear: both;"></div>
+                <div class="compra">
+
+                    <h3>Na compra de TRÊS pizzas, GANHE um regrigerante de 2 litros de cortesia!!!</h3>
+                    <br>
+                </div>
+                <div class="cardapio">
+                    <p>
+                        <a href="#">CARDÁPIO</a>
+                    </p>
+                </div>
+                <div class="promoçoes">
+                    <p>
+                        <a href="#">OUTRAS PROMOÇÕES</a>
+                    </p>
+                </div>
+                <div class="acompanhamentos">
+                    <p>
+                        <a href="#">ACOMPANHAMENTOS</a>
+                    </p>
+                </div>
+            </section>
+            <div class="banner">
+                <img src="Imagens/Ativo 3.png" alt="Imagem de pizza à direita">
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+        <div class="quebrar">
+            <div class="quadrado"></div>
+        </div>
+        <section id="sobreNos">
+            <div class="sobren">
+                <h2>Sobre nós...</h2>
+                <br>
+                <p>Tudo começou com o talento e a disposição da família Tarallo, que, no final dos anos 1950, deixou a terra
+                    natal, Nápoles, atravessou o oceano e fincou âncora em solo brasileiro. Seo Francesco Tarallo com o filho
+                    Giovanni e, logo depois, Dona Speranza com o filho Antonio, trouxeram na bagagem o espírito empreendedor
+                    e várias receitas, aquelas elaboradas no dia a dia em família, com a tradição do Sul da Itália.
+                </p>
+                <br>
+
+                <p>Família unida na metrópole, logo começou a preparar suas receitas. Inicialmente em pequenas instalações,
+                    para um pequeno público. No cardápio enxuto estava o jeito napolitano de se fazer pizza e, com a tradição
+                    napolitana, criar novidades na gastronomia paulistana, que se tornaram verdadeiros clássicos: Pizza Margherita,
+                    Pizza Napoletana, Calzone (pizza fechada), Tortano (o genuíno pão de linguiça napolitano) e a Pastiera
+                    di Grano em receita exclusiva da família, do jeito que se faz na região de Nápoles.
+                </p>
+            </div>
+            <div class="quebra">
+                <div class="circulos1"></div>
+                <div class="circulos2"></div>
+                <div class="circulos3"></div>
+                <div class="circulos4"></div>
+            </div>
+            <br>
+        </section>
+        <section id="rodape">
+            <div class="mapa">
+                <img src="Imagens/Ativo 1.png" alt="Mapa da localização">
+            </div>
+            <div id="contato">
+                <div class="telefone">
+                    <p>TELEFONE: (11) 2222–1994</p>
+                </div>
+                <br>
+                <div class="endereço">
+                    <address> Localização: Rua Augusto Tolle, 464
+                        <br> Rua 13 de Maio, 1004
+                        <br> Avenida Sabiá, 786
+                    </address>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+</body>
+
+</html>
